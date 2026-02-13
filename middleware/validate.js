@@ -1,11 +1,5 @@
 // middleware/validate.js
 
-/*
- Generic validation middleware
- Usage:
- router.post("/", validate(schema), controller)
-*/
-
 const validate = (schema) => {
   return (req, res, next) => {
 
@@ -21,7 +15,6 @@ const validate = (schema) => {
       });
     }
 
-    // Replace body with sanitized value
     req.body = value;
 
     next();
