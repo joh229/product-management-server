@@ -9,11 +9,7 @@ const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes");
 
 const app = express();
-
-
-
 connectDB();
-
 
 app.use(cors());
 app.use(express.json());
